@@ -1,6 +1,6 @@
 package com.gss.dovizkur.client.GenelParaClient;
 
-import com.gss.dovizkur.domain.GenelParaDomain.Root2;
+import com.gss.dovizkur.model.GenelParaModel.Root2;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.hateoas.EntityModel;
 import org.springframework.web.bind.annotation.GetMapping;

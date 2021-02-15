@@ -1,4 +1,4 @@
-package com.gss.dovizkur.domain.GenelParaDomain;
+package com.gss.dovizkur.model.GenelParaModel;
 
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
@@ -7,13 +7,9 @@ import lombok.Data;
 
 import javax.persistence.*;
 
-@Entity
-@Table(name = "root2")
+
 @Data
 public class Root2 {
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
     @JsonProperty("USD")
     @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
     @OneToOne(fetch = FetchType.LAZY,cascade = {CascadeType.ALL})

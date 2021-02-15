@@ -1,17 +1,13 @@
-package com.gss.dovizkur.domain.GenelParaDomain;
+package com.gss.dovizkur.model.GenelParaModel;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 
 import javax.persistence.*;
 
-@Entity
-@Table(name = "eur")
 @Data
 public class EUR {
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
+
     @JsonProperty("satis")
     @Column(name = "satis")
     private String satis;
